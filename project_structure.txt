@@ -1,0 +1,33 @@
+ads_sdk_backend/
+│
+├── src/
+│   ├── config/
+│   │   ├── db.js               # Database configuration
+│   │   ├── env.js              # Environment variables
+│   │
+│   ├── core/
+│   │   ├── middlewares/
+│   │   │   └── errorHandler.js # Centralized error handler
+│   │   └── utils/
+│   │       └── logger.js       # Logging utility
+│   │
+│   ├── modules/
+│   │   └── ads/
+│   │       ├── models/         # Sequelize model
+│   │       │   └── Ad.js
+│   │       ├── repositories/   # Ad repository
+│   │       │   └── adRepository.js
+│   │       ├── services/       # Business logic
+│   │       │   └── adService.js
+│   │       ├── controllers/    # Request handlers
+│   │       │   └── adController.js
+│   │       ├── routes/         # API routes
+│   │       │   └── adRoutes.js
+│   │
+│            
+├── server.js  # Application entry point
+├── .gitignore
+├── .env
+├── .env.example                        # Environment variables
+├── package.json
+└── public/uploads/             # Directory for uploaded images
